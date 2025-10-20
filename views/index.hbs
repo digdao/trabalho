@@ -1,0 +1,28 @@
+<h2>Bem-vindo à {{pageTitle}}, {{nomeUsuario}}!</h2>
+
+<p>Este é o conteúdo da página inicial.</p>
+
+<hr>
+
+{{#if mostrarMensagem}}
+    <div class="mensagem-sucesso">
+        <p><b>Parabéns!</b> O Handlebars IF funcionou!</p>
+    </div>
+{{else}}
+    <div class="mensagem-aviso">
+        <p>A mensagem está oculta (o Handlebars ELSE funcionou).</p>
+    </div>
+{{/if}}
+
+<h3>Minha Lista de Itens:</h3>
+<ul>
+    {{#each itens}}
+        {{#if this.completo}}
+            <li class="completo">{{this.name}} (Feito)</li>
+        {{else}}
+            <li>{{this.name}} (Pendente)</li>
+        {{/if}}
+    {{/each}}
+</ul>
+
+<script src="/js/client.js"></script>

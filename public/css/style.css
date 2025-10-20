@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+header a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+main {
+    padding: 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f4f4f4;
+    margin-top: 2rem;
+}
+.mensagem-sucesso {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+}
+.mensagem-aviso {
+    background: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border: 1px solid #ffeeba;
+}
+.completo {
+    text-decoration: line-through;
+    color: #888;
+}
