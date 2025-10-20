@@ -1,0 +1,16 @@
+<h2>Esta é a {{pageTitle}}</h2>
+<p>Olá, {{nomeUsuario}}!</p>
+
+<p>Este projeto foi criado para demonstrar o uso de Node.js, Express, Handlebars, Controllers e Rotas para a disciplina de Análise e Desenvolvimento de Sistemas.</p>
+
+<hr>
+
+{{#if mostrarMensagem}}
+    <div class="mensagem-sucesso">
+        <p>A mensagem está visível (IF).</p>
+    </div>
+{{else}}
+    <div class="mensagem-aviso">
+        <p>A mensagem está oculta, como esperado (ELSE).</p>
+    </div>
+{{/if}}

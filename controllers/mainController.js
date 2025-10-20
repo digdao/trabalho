@@ -5,8 +5,8 @@ const mainController = {
     getHomePage: (req, res) => {
         // Dados que você quer enviar para a página
         const data = {
-            pageTitle: 'Minha Página',
-            nomeUsuario: 'Visitante',
+            pageTitle: 'Trabalho',
+            nomeUsuario: 'Rodrigo',
             mostrarMensagem: true, // <-- Chave para o IF/ELSE
             // Lista de itens para um loop (bônus)
             itens: [
@@ -24,7 +24,7 @@ const mainController = {
     getAboutPage: (req, res) => {
         const data = {
             pageTitle: 'Sobre o Projeto',
-            nomeUsuario: 'Admin',
+            nomeUsuario: 'Rodrigo',
             mostrarMensagem: false // <-- Chave para o IF/ELSE
         };
         
