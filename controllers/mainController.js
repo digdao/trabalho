@@ -23,8 +23,8 @@ const mainController = {
     // Função para a Página "Sobre"
     getAboutPage: (req, res) => {
         const data = {
-            pageTitle: 'Sobre o Projeto',
-            nomeUsuario: 'Rodrigo - Sobre',
+            pageTitle: 'Sobre o Projeto', // Titulo página Sobre
+            nomeUsuario: 'Rodrigo - Sobre', // Nome do usuário página Sobre
             mostrarMensagem: false // <-- Chave para o IF/ELSE
         };
         
@@ -34,10 +34,10 @@ const mainController = {
 
     getContactPage: (req, res) => {
         const data = {
-            pageTitle: 'Página de Contato',
-            nomeUsuario: 'Rodrigo - Contato',
-            email: 'digdao@gmail.com',
-            telefone: '(17) 92002-5328',
+            pageTitle: 'Página de Contato', // Titulo página contato
+            nomeUsuario: 'Rodrigo - Contato', // Nome de usuário da página contato
+            email: 'digdao@gmail.com', // E-Mail
+            telefone: '(17) 92002-5328', // Telefone
         };
         // Renderiza o arquivo 'contato.hbs'
         res.render('contato', data);
