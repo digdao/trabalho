@@ -5,8 +5,8 @@ const mainController = {
     getHomePage: (req, res) => {
         // Dados que você quer enviar para a página
         const data = {
-            pageTitle: 'Trabalho',
-            nomeUsuario: 'Rodrigo',
+            pageTitle: 'Trabalho do Vandrei',
+            nomeUsuario: 'Rodrigo - Home',
             mostrarMensagem: true, // <-- Chave para o IF/ELSE
             // Lista de itens para um loop (bônus)
             itens: [
@@ -24,12 +24,24 @@ const mainController = {
     getAboutPage: (req, res) => {
         const data = {
             pageTitle: 'Sobre o Projeto',
-            nomeUsuario: 'Rodrigo',
+            nomeUsuario: 'Rodrigo - Sobre',
             mostrarMensagem: false // <-- Chave para o IF/ELSE
         };
         
         // Renderiza o arquivo 'sobre.hbs'
         res.render('sobre', data);
+    },
+
+    getContactPage: (req, res) => {
+        const data = {
+            pageTitle: 'Página de Contato',
+            nomeUsuario: 'Rodrigo - Contato',
+            email: 'digdao@gmail.com',
+            telefone: '(17) 92002-5328',
+        };
+        // Renderiza o arquivo 'contato.hbs'
+        res.render('contato', data);
+
     }
 };
 

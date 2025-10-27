@@ -8,6 +8,10 @@ router.get('/', mainController.getHomePage);
 // Rota para uma segunda página (ex: /sobre)
 router.get('/sobre', mainController.getAboutPage);
 
-// Você pode adicionar mais rotas aqui (ex: /contato)
+// Rota para a página contato ( ex /contato)
+router.get('/contato', mainController.getContactPage);
+
+
+// Você pode adicionar mais rotas aqui conforme necessário
 
 module.exports = router;

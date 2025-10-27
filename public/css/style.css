@@ -41,3 +41,11 @@ footer {
     text-decoration: line-through;
     color: #888;
 }
+.contatos {
+    background-color: #82ec9b;
+    color: rgb(80, 68, 80);
+}
+.menu {
+    background-color: #444;
+    padding: 10px;
+}

@@ -1,0 +1,19 @@
+<h2>{{pageTitle}}</h2>
+<h3>Agora você está na página contato, {{nomeUsuario}}</h3>
+<p>Você pode entar em contato conosco através desses canais:</p>
+
+<ul class="contatos">
+    <li><strong>E-Mail: </strong>{{email}}</li>
+    <li><strong>Telefone: </strong>{{telefone}}</li>
+</ul>
+
+<p>Ou se preferir, envie uma mensagem pelo formulário abaixo:</p>
+
+<form>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea name="mensagem" id="mensagem" rows="4" cols="50"></textarea><br>
+
+    <button type="submit">Enviar</button>
+</form>
